@@ -7,7 +7,8 @@ const PORT = process.env.PORT
 console.log(PORT)
 const app = express()
 
-//Middleware
+// MIDDLEWARE
+app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'))
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
