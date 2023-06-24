@@ -1,6 +1,5 @@
 const React = require('react')
 const Default = require('./layouts/default')
-const { lastIndexOf } = require('../models/bread')
 
 function Index ({breads, bakers, title}) {
     return(
